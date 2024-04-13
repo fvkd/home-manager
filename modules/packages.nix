@@ -1,79 +1,98 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    # Terminals and Shells
     alacritty
-    arandr
+    fish
+    starship
+    zellij
+
+    # System Utilities
     atuin
-    bettercap
     btop
     copyq
-    cpio
-    cyme
-    dmenu
-    dog
+    dig
     duf
-    dunst
-    dzen2
-    emacs-gtk
-    eza
-    findutils
-    fish
-    fuzzel
-    fzf
-    github-desktop
     glances
-    glow
-    gmrun
-    gnumake
-    gparted
     gping
+    htop
     hyprpicker
     i3lock-fancy
     keyd
-    libsecret
-    libsForQt5.dolphin
-    libsForQt5.kio-admin
-    libsForQt5.kwallet-pam
-    librewolf
-    libserdes
-    meld
     neofetch
-    nettools
     nitrogen
-    parcellite
     pavucontrol
-    pingu
-    qutebrowser
-    rpi-imager
-    rustup
-    starship
     swaybg
     swayidle
-    swww
-    tgpt
-    tldr
     upower
     usbutils
     waybar
+    wayland-utils
+    wifish
+    wlr-protocols
+    wlr-randr
+    wofi
+
+    # File Managers and Related Tools
+    libsForQt5.dolphin
+    libsForQt5.kio-admin
+    libsForQt5.kwallet-pam
+    xfce.thunar
+
+    # Development Tools
+    emacs-gtk
+    github-desktop
+    gnumake
+    rustup
+
+    # Networking Tools
+    arandr
+    bettercap
+    dog
+    nettools
+    rpi-imager
+
+    # Clipboard Managers
+    parcellite
+
+    # Display and Window Managers
+    dunst
+    dzen2
+    swaybg
     wayfirePlugins.wayfire-plugins-extra
     wayfirePlugins.wcm
     wayfirePlugins.windecor
     wayfirePlugins.wf-shell
     waypaper
     wf-config
-    wlay
     wlogout
     wlroots
     wpaperd
     xdg-desktop-portal-hyprland
+
+    # Browsers and Internet-related
+    librewolf
+    qutebrowser
+
+    # Search and File Management Utilities
+    findutils
+    fzf
     xfce.catfish
-    xfce.thunar
-    wayland-utils
-    wifish
-    wlay
-    wlr-protocols
-    wlr-randr
-    wofi
-    zellij
+
+    # Text and Document Viewers
+    glow
+    meld
+
+    # Miscellaneous
+    cpio
+    cyme
+    dmenu
+    eza
+    fuzzel
+    gmrun
+    gparted
+    pingu
+    tgpt
+    tldr
     zoxide
   ];
 }
