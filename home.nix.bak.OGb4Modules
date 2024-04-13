@@ -1,0 +1,235 @@
+{
+  config,
+  pkgs,
+  ...
+}: {
+  # Home Manager needs a bit of information about you and the paths it should
+  # manage.
+  home.username = "vivivi";
+  home.homeDirectory = "/home/vivivi";
+
+  # This value determines the Home Manager release that your configuration is
+  # compatible with. This helps avoid breakage when a new Home Manager release
+  # introduces backwards incompatible changes.
+  #
+  # You should not change this value, even if you update Home Manager. If you do
+  # want to update the value, then make sure to first check the Home Manager
+  # release notes.
+  home.stateVersion = "23.11"; # Please read the comment before changing.
+
+  # The home.packages option allows you to install Nix packages into your
+  # environment.
+  home.packages = with pkgs; [
+    alacritty
+    #acquire    ###Tool to quickly gather forensic artifacts from disk images or a live system
+    #afflib    ###Advanced forensic format library
+    #aichat
+    #aircrack-ng
+    #airgeddon
+    arandr
+    #armitage
+    atuin ###Run on system
+    bettercap
+    #bitwarden
+    #brutespray    ###Tool to do brute-forcing from Nmap output
+    btop
+    #bulk_extractor    ###A digital forensics tool for extracting information from file systems
+    #burpsuite    ###An integrated platform for performing security testing of web applications
+    ###   --- WHY WONT THIS INSTALL THRU HOME-MANAGER? ---   ### gpt4all-chat
+    #caprine-bin
+    #cargo
+    #charm
+    ###    a cheat sheet app should go here
+    #cope
+    copyq
+    #ckb-next
+    cpio
+    #cosmic-randr
+    #crackmapexec    ###Tool for pentesting networks
+    cyme
+    #das    ###Divide full port scan results and use it for targeted Nmap runs
+    #dc3dd    ###A patched version of dd that includes a number of features useful for computer forensics
+    #direnv    ###run on system
+    dmenu
+    dog
+    duf
+    dunst
+    dzen2
+    emacs-gtk
+    #evil-winrm #WinRM shell for hacking/pentesting
+    #expliot ###IoT security testing and exploitation framework
+    #etcher
+    eza
+    #fd
+    #fh
+    findutils
+    fish
+    fuzzel
+    fzf
+    #gh
+    #git ## ## this is needed to be installed by sys in configuration.nix for doom emacs
+    github-desktop
+    #gitkraken
+    glances
+    glow
+    gmrun
+    gnumake
+    gparted
+    gping
+    #gpt4all-chat
+    #helix
+    #htop
+    #hstsparser #Tool to parse Firefox and Chrome HSTS databases into forensic artifacts
+    hyprpicker
+    i3lock-fancy
+    #ifwifi # ##A simple wrapper over nmcli using wifiscanner made in rust
+    #input-remapper
+    #iwd
+    #keepwn ###Tool to automate KeePass discovery and secret extraction
+    keyd
+    #knowsmore #Tool for pentesting Microsoft Active Directory
+    #labwc
+    libsecret
+    libsForQt5.dolphin
+    libsForQt5.kio-admin
+    libsForQt5.kwallet-pam
+    librewolf
+    libserdes
+    #logseq
+    #lsd
+    #maltego ###An open source intelligence and forensics application, enabling to easily gather information about DNS, domains, IP addresses, websites, persons, and so on
+    #mako
+    meld
+    #metabigor
+    #metasploit
+    #msfpc
+    neofetch
+    #neovim
+    nettools
+    #networkminer ###The Open Source Network Forensic Analysis Tool (NFAT)
+    nitrogen
+    #nixfmt
+    #nmap
+    #nmap-formatter ###Tool that allows you to convert nmap output
+    #nyxt
+    #obsidian    ###Will not install as a system app without throwing a fit about Electron being unsafe
+    #opensnitch
+    #opensnitch-ui
+    parcellite
+    pavucontrol
+    #pentestgpt
+    #perl
+    pingu
+    #polybar
+    #protonvpn-gui
+    #pwntools ###CTF framework and exploit development library
+    #python311Full
+    #python311Packages.acquire ###Tool to quickly gather forensic artifacts from disk images or a live system
+    python311Packages.qt-material
+    #python310Packages.nmapthon2 ###Python library to automate nmap
+    #python311Packages.nmapthon2 ###Python library to automate nmap
+    #python311Packages.openai
+    #python310Packages.python-libnmap ###Library to run nmap scans, parse and diff scan results
+    #python311Packages.python-libnmap ###Library to run nmap scans, parse and diff scan results
+    #python310Packages.python-nmap ###Python library which helps in using nmap
+    #python311Packages.python-nmap ###Python library which helps in using nmap
+    #python311Packages.tiktoken
+    qutebrowser
+    #ripgrep ## this is needed to be installed by sys in configuration.nix for doom emacs
+    #rofi
+    #routersploit
+    rpi-imager
+    #rustscan ###Faster Nmap Scanning with Rust
+    rustup
+    #skate
+    #sleuthkit ###A forensic/data recovery tool
+    #spacevim
+    starship
+    #stumpish
+    sutils
+    swaybg
+    swayidle
+    swww
+    tgpt
+    tldr
+    #tracee ###Linux Runtime Security and Forensics using eBPF
+    upower
+    usbutils
+    #vivaldi
+    waybar
+    wayfirePlugins.wayfire-plugins-extra
+    wayfirePlugins.wcm
+    wayfirePlugins.windecor
+    wayfirePlugins.wf-shell
+    waypaper
+    #websploit
+    wf-config
+    wlay
+    wlogout
+    wlroots
+    wpaperd
+    xdg-desktop-portal-hyprland
+    xfce.catfish
+    xfce.thunar
+    #warp-terminal
+    wayland-utils
+    wifish # ##Simple wifi shell script for linux
+    #wifite2 ###Rewrite of the popular wireless network auditor, wifite
+    wlay
+    wlr-protocols
+    wlr-randr
+    wofi
+    zellij
+    zoxide
+    #yai
+
+    # # It is sometimes useful to fine-tune packages, for example, by applying
+    # # overrides. You can do that directly here, just don't forget the
+    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
+    # # fonts?
+    ###(pkgs.nerdfonts.override { fonts = [ "0xProto Nerd Font" ]; })
+
+    # # You can also create simple shell scripts directly inside your
+    # # configuration. For example, this adds a command 'my-hello' to your
+    # # environment:
+    # (pkgs.writeShellScriptBin "my-hello" ''
+    #   echo "Hello, ${config.home.username}!"
+    # '')
+  ];
+
+  # Home Manager is pretty good at managing dotfiles. The primary way to manage
+  # plain files is through 'home.file'.
+  home.file = {
+    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
+    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
+    # # symlink to the Nix store copy.
+    #".screenrc".source = ~/.dotfiles/screenrc;
+    #".bashrc".source = ~/.bashrc
+    # # You can also set the file content immediately.
+    # ".gradle/gradle.properties".text = ''
+    #   org.gradle.console=verbose
+    #   org.gradle.daemon.idletimeout=3600000
+    # '';
+  };
+
+  # Home Manager can also manage your environment variables through
+  # 'home.sessionVariables'. If you don't want to manage your shell through Home
+  # Manager then you have to manually source 'hm-session-vars.sh' located at
+  # either
+  #
+  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
+  #
+  # or
+  #
+  #  /etc/profiles/per-user/vivivi/etc/profile.d/hm-session-vars.sh
+  #
+  home.sessionVariables = {EDITOR = "doom run";};
+
+  # Add support for ./local/bin
+  home.sessionPath = ["$HOME/.local/bin"];
+
+  # Let Home Manager install and manage itself.
+  programs.home-manager.enable = true;
+
+  ### figure out the proper expression for this: allowUnfree = true;
+}
