@@ -70,6 +70,7 @@
     xdg-desktop-portal-hyprland
 
     # Browsers and Internet-related
+    deluge
     librewolf
     qutebrowser
 
