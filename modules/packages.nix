@@ -4,7 +4,7 @@
     alacritty
     fish
     starship
-    zellij
+    #zellij
 
     # System Utilities
     atuin
