@@ -3,6 +3,7 @@
     # Terminals and Shells
     alacritty
     fish
+    ollama
     starship
     #zellij
 
