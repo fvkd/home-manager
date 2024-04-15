@@ -1,0 +1,19 @@
+/nix/store/n85s3j7myh0da42q8vgidlr17i7zxfjl-home-manager-generation
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+nix profile remove /nix/store/lps5y1yfwci0p3i4g7n6pdwwbi8gqsv0-home-manager-path
+removing 'home-manager-path'
+removed 1 packages, kept 8 packages
+Activating linkGeneration
+Cleaning up orphan links from /home/vivivi
+No change so reusing latest profile generation 10
+Creating home file links in /home/vivivi
+Activating onFilesChange
+Activating reloadSystemd
+
+There are 142 unread and relevant news items.
+Read them by running the command "home-manager news".
+
