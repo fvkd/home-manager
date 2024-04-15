@@ -1,4 +1,16 @@
-/nix/store/n85s3j7myh0da42q8vgidlr17i7zxfjl-home-manager-generation
+warning: error: unable to download 'https://cache.nixos.org/zrz6zf22cl9dk3avflibygsy1z2ahc8i.narinfo': SSL connect error (35); retrying in 276 ms
+these 3 derivations will be built:
+  /nix/store/f8lpssq03pqyh4dgspqadivz9xwidc76-home-manager-path.drv
+  /nix/store/rvy73816hqdnam14hvw4h9j589pmlkmz-activation-script.drv
+  /nix/store/nsycy20hg8gyhffjdzfnwn7ykbfmxvgv-home-manager-generation.drv
+this path will be fetched (10.32 MiB download, 29.90 MiB unpacked):
+  /nix/store/b5p927360jggvzqaflwzqjf2z9kkh2wb-ollama-0.1.30
+copying path '/nix/store/b5p927360jggvzqaflwzqjf2z9kkh2wb-ollama-0.1.30' from 'https://cache.nixos.org'...
+building '/nix/store/f8lpssq03pqyh4dgspqadivz9xwidc76-home-manager-path.drv'...
+created 3737 symlinks in user environment
+building '/nix/store/rvy73816hqdnam14hvw4h9j589pmlkmz-activation-script.drv'...
+building '/nix/store/nsycy20hg8gyhffjdzfnwn7ykbfmxvgv-home-manager-generation.drv'...
+/nix/store/zrz6zf22cl9dk3avflibygsy1z2ahc8i-home-manager-generation
 Starting Home Manager activation
 Activating checkFilesChanged
 Activating checkLinkTargets
@@ -9,7 +21,7 @@ removing 'home-manager-path'
 removed 1 packages, kept 8 packages
 Activating linkGeneration
 Cleaning up orphan links from /home/vivivi
-No change so reusing latest profile generation 10
+Creating profile generation 11
 Creating home file links in /home/vivivi
 Activating onFilesChange
 Activating reloadSystemd
