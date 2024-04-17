@@ -22,6 +22,7 @@
     neofetch
     nitrogen
     pavucontrol
+    #rio
     swaybg
     swayidle
     upower
@@ -43,6 +44,7 @@
     emacs-gtk
     github-desktop
     gnumake
+    #go
     rustup
 
     # Networking Tools
