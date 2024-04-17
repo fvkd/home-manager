@@ -11,7 +11,7 @@
         enable = true;
         # Additional XMonad configuration can go here
       };
-      #default = "xmonad";
+      #default = "xmonad"; ## this is throwing error 'The option `xsession.windowManager.default' does not exist.
     };
   };
 
