@@ -8,6 +8,6 @@
     ./modules/packages.nix # Packages module
     ./modules/environment.nix # Environment module
     ./modules/session.nix # Session module
-    ./modules/xmonad.nix # Xmonad module
+    #./modules/xmonad.nix # Xmonad module
   ];
 }

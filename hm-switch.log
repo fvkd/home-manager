@@ -1,4 +1,4 @@
-/nix/store/31qygc9gi8hkch2h5p2s1q8bwpbd45hh-home-manager-generation
+/nix/store/d69rvn8crzddb5zi5ryk517ycqlf7r33-home-manager-generation
 Starting Home Manager activation
 Activating checkFilesChanged
 Activating checkLinkTargets
@@ -9,7 +9,7 @@ removing 'home-manager-path'
 removed 1 packages, kept 8 packages
 Activating linkGeneration
 Cleaning up orphan links from /home/vivivi
-No change so reusing latest profile generation 16
+Creating profile generation 17
 Creating home file links in /home/vivivi
 Activating onFilesChange
 Activating reloadSystemd
