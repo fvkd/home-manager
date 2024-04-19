@@ -20,6 +20,7 @@
     i3lock-fancy
     keyd
     neofetch
+    nitch
     nitrogen
     pavucontrol
     rio

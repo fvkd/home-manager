@@ -1,19 +1,33 @@
-/nix/store/d69rvn8crzddb5zi5ryk517ycqlf7r33-home-manager-generation
+these 3 derivations will be built:
+  /nix/store/wkc1hf7phbg76xxbqn7fkx3law6nnplv-home-manager-path.drv
+  /nix/store/8l5ya359lhk1hq6jkay9xqy448fgw0mz-activation-script.drv
+  /nix/store/axkz7x08a34d7m0v93s8cd1c4l7653s1-home-manager-generation.drv
+building '/nix/store/wkc1hf7phbg76xxbqn7fkx3law6nnplv-home-manager-path.drv'...
+created 3747 symlinks in user environment
+building '/nix/store/8l5ya359lhk1hq6jkay9xqy448fgw0mz-activation-script.drv'...
+building '/nix/store/axkz7x08a34d7m0v93s8cd1c4l7653s1-home-manager-generation.drv'...
+/nix/store/vc197hcnadwi5sxik0429f5hmmf4pfx0-home-manager-generation
 Starting Home Manager activation
 Activating checkFilesChanged
 Activating checkLinkTargets
 Activating writeBoundary
 Activating installPackages
-nix profile remove /nix/store/vgpllfvg567i8hmc56vxnhd64nb212h2-home-manager-path
+nix profile remove /nix/store/fzbvmgrbg7aa52npfwpl0wxk9w7vq03c-home-manager-path
 removing 'home-manager-path'
 removed 1 packages, kept 8 packages
 Activating linkGeneration
 Cleaning up orphan links from /home/vivivi
-Creating profile generation 17
+Path '/home/vivivi/.xmonad/xmonad-x86_64-linux' does not link into a Home Manager generation. Skipping delete.
+Creating profile generation 20
 Creating home file links in /home/vivivi
 Activating onFilesChange
 Activating reloadSystemd
+Suggested commands:
+systemctl --user stop picom.service polybar.service
+this derivation will be built:
+  /nix/store/msi4yzh2xylqjqlk6d49s346phvsams6-hm-news.json.drv
+building '/nix/store/msi4yzh2xylqjqlk6d49s346phvsams6-hm-news.json.drv'...
 
-There are 142 unread and relevant news items.
+There are 143 unread and relevant news items.
 Read them by running the command "home-manager news".
 
