@@ -95,9 +95,11 @@
     fuzzel
     gmrun
     gparted
+    haruna 
     pingu
     tgpt
     tldr
     zoxide
+    #vlc
   ];
 }
