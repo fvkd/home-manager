@@ -95,7 +95,7 @@
     fuzzel
     gmrun
     gparted
-    haruna 
+    haruna
     pingu
     tgpt
     tldr
