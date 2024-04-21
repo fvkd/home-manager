@@ -1,46 +1,18 @@
-these 10 derivations will be built:
-  /nix/store/0qv0gygajgqlw5wyhvd47kc43c7szvqw-options.json.drv
-  /nix/store/g48n0bsznam5cfhn70hlh83zgnnrfbdr-hm-modules-messages.drv
-  /nix/store/k061hrssryxyx5bz7cajxvk19dy94rys-cleanup.drv
-  /nix/store/li2n9s83zfg2w81dp966qx857rl9pqgj-link.drv
-  /nix/store/kd4mip6mkjrdxnx0nrlb7yf6f4yh8c5x-home-manager.drv
-  /nix/store/w58mfmp45avmm9xgh44d1qi4yv4qhi31-home-configuration-reference-manpage.drv
-  /nix/store/qlv9v6885fr6k32mvg5cm7s3gasi4wlj-home-manager-path.drv
-  /nix/store/zw7sp3mrv9lh33a8sq9lv01cmqxnrk7w-check-link-targets.sh.drv
-  /nix/store/bd9fz3jhr0gy8x6f6zhxb9nnrqgq7s5s-activation-script.drv
-  /nix/store/8p882wm5mgvnjg7zp2hj3pzxr31k5scx-home-manager-generation.drv
-building '/nix/store/g48n0bsznam5cfhn70hlh83zgnnrfbdr-hm-modules-messages.drv'...
-building '/nix/store/kd4mip6mkjrdxnx0nrlb7yf6f4yh8c5x-home-manager.drv'...
-building '/nix/store/0qv0gygajgqlw5wyhvd47kc43c7szvqw-options.json.drv'...
-install: creating directory '/nix/store/385vbkqzmnhfqq4dfw18a3wnr8l64q0n-home-manager'
-install: creating directory '/nix/store/385vbkqzmnhfqq4dfw18a3wnr8l64q0n-home-manager/bin'
-'/nix/store/qv7mxacszys6cfmsf0zrgab6fd8dfb4n-home-manager' -> '/nix/store/385vbkqzmnhfqq4dfw18a3wnr8l64q0n-home-manager/bin/home-manager'
-building '/nix/store/zw7sp3mrv9lh33a8sq9lv01cmqxnrk7w-check-link-targets.sh.drv'...
-building '/nix/store/k061hrssryxyx5bz7cajxvk19dy94rys-cleanup.drv'...
-building '/nix/store/li2n9s83zfg2w81dp966qx857rl9pqgj-link.drv'...
-building '/nix/store/w58mfmp45avmm9xgh44d1qi4yv4qhi31-home-configuration-reference-manpage.drv'...
-building '/nix/store/qlv9v6885fr6k32mvg5cm7s3gasi4wlj-home-manager-path.drv'...
-created 3890 symlinks in user environment
-building '/nix/store/bd9fz3jhr0gy8x6f6zhxb9nnrqgq7s5s-activation-script.drv'...
-building '/nix/store/8p882wm5mgvnjg7zp2hj3pzxr31k5scx-home-manager-generation.drv'...
-/nix/store/419zml62jcgnwc3qc35d5dd2apfvcxrk-home-manager-generation
+/nix/store/zmpjw32d13hw99rgl5m9airwba4fkc9m-home-manager-generation
 Starting Home Manager activation
 Activating checkFilesChanged
 Activating checkLinkTargets
 Activating writeBoundary
 Activating installPackages
-nix profile remove /nix/store/ijw6fhsxs0sxsiilai61y32dalpvk1lc-home-manager-path
+nix profile remove /nix/store/ffjidbw2sjrripc7g2m34g93xnsflsxw-home-manager-path
 removing 'home-manager-path'
 removed 1 packages, kept 8 packages
 Activating linkGeneration
 Cleaning up orphan links from /home/vivivi
-Creating profile generation 21
+No change so reusing latest profile generation 25
 Creating home file links in /home/vivivi
 Activating onFilesChange
 Activating reloadSystemd
-this derivation will be built:
-  /nix/store/bi45c64wghjsf5py72dhcvxdxjnsp2pn-hm-news.json.drv
-building '/nix/store/bi45c64wghjsf5py72dhcvxdxjnsp2pn-hm-news.json.drv'...
 
 There are 146 unread and relevant news items.
 Read them by running the command "home-manager news".
