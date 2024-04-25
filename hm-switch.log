@@ -1,19 +1,29 @@
-/nix/store/zmpjw32d13hw99rgl5m9airwba4fkc9m-home-manager-generation
-Starting Home Manager activation
-Activating checkFilesChanged
-Activating checkLinkTargets
-Activating writeBoundary
-Activating installPackages
-nix profile remove /nix/store/ffjidbw2sjrripc7g2m34g93xnsflsxw-home-manager-path
-removing 'home-manager-path'
-removed 1 packages, kept 8 packages
-Activating linkGeneration
-Cleaning up orphan links from /home/vivivi
-No change so reusing latest profile generation 25
-Creating home file links in /home/vivivi
-Activating onFilesChange
-Activating reloadSystemd
+error:
+       … while evaluating the attribute 'activationPackage'
 
-There are 146 unread and relevant news items.
-Read them by running the command "home-manager news".
+         at /home/vivivi/.nix-defexpr/channels/home-manager/modules/default.nix:48:7:
 
+           47|
+           48|       activationPackage = module.config.home.activationPackage;
+             |       ^
+           49|
+
+       … while evaluating a branch condition
+
+         at /nix/store/7k0f5g7p6z5vz7171zgbapkgdswzxn4i-nixos/nixos/lib/lists.nix:125:9:
+
+          124|       fold' = n:
+          125|         if n == len
+             |         ^
+          126|         then nul
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: The option `environment' does not exist. Definition values:
+       - In `/home/vivivi/.config/home-manager/modules/keyd.nix':
+           {
+             etc = {
+               "keyd/default.conf" = {
+                 text = ''
+                   [ids]
+           ...

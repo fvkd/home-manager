@@ -3,7 +3,7 @@
     # Configuration for files
   };
   home.sessionVariables = {
-    EDITOR = "spacevim";
+    EDITOR = "code";
   };
   home.sessionPath = ["$HOME/.local/bin"];
 }

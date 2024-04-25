@@ -19,10 +19,10 @@
     htop
     hyprpicker
     i3lock-fancy
-    keyd
     neofetch
     nitch
     nitrogen
+    openssl
     pavucontrol
     rio
     swaybg
@@ -77,6 +77,7 @@
     # Browsers and Internet-related
     deluge
     librewolf
+    links2
     qutebrowser
 
     # Search and File Management Utilities
@@ -92,11 +93,13 @@
     cpio
     cyme
     dmenu
+    doing
     eza
     fuzzel
     gmrun
     gparted
     haruna
+    nb
     pingu
     tgpt
     tldr
